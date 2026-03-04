@@ -1,0 +1,36 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orçamento Major Clean</title>
+    </head>
+
+    <body>
+        <h1>Faça aqui seu orçamento gratuito</h1>
+        
+    <label for="servico">Selecione o tipo de serviço:</label>
+        
+        <select id="servico">
+        <option value="sofa">Sofá</option>
+        <option value="colchao">Colchão</option>
+        <option value="tapete">Tapete</option>
+        <option value="banco">Banco Automotivo</option>
+        </select>
+        <br><br>
+
+        <label for="qtd">Quantidade:</label>
+        <input type="number" id="qtd" min="1"> 
+
+    <br><br>
+
+        <input type="checkbox" id="manchas">
+        <label for="manchas">Possuí manchas difíceis </label>
+
+    <br><br>
+
+        <button onclick="calcular()">Calcular Orçamento</button>
+        <p id="resultado"> Valor total: R$ 0</p>
+            <script src="script.js"></script>
+        </body>
+    </html>

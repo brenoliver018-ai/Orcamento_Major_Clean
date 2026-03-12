@@ -90,31 +90,70 @@ body {
 0%{transform:scale(1);}
 50%{transform:scale(1.05);}
 100%{transform:scale(1);}
-}
+} 
+
+/*CAIXA SELECT*/
 .campo{
     display: flex;
-    gap: 8px;
-    align-items: center;
+    gap: 5px;
     flex-direction: column;
+    align-items: center;
     
 }
+/*Campo do select Qtd*/
 #qtd{
     display: block;
-    margin: 5px auto;
+    margin: 1px auto;
     width: 30px;
-}
-label[for="qtd"]{
-    color: #e0e0e0;
+    margin-top: 1px;
 
 }
-select, input{
-    width: 200px;
-    padding: 8px;
+/*texto - Quantidade*/
+label[for="qtd"]{
+    color: #e0e0e0;
+    margin-top: 1px;
+
+} 
+/*CAMPO SELECT SERVIÇO*/
+select{
+    padding: 7px;
     border-radius: 8px;
     border: 1px solid #ccc;
     background-color: rgba(255,255,255,0.9);
     font-size: 14px;
     cursor: pointer;
+    width: 200px;
 }
+/*CAMPO SELECT QTD*/
+input{
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: rgba(255,255,255,0.9);
+    font-size: 14px;
+    cursor: pointer;
+
+}
+/* Checkbox + texto */
+.checkbox-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #e0e0e0;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+.checkbox-group input{
+    margin-right: 5px;
+    border: white solid 1px;
+}
+
+#resultado{
+    transition: 2.2s;
+    
+}
+
 
 

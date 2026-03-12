@@ -32,7 +32,7 @@ function calcular() {
         style: "currency", 
         currency: "BRL"
     });
-    document.getElementById("resultado").innerText= "Valor total: "+ totalFormatado;
+    document.getElementById("resultado").innerText= animarValor(total)+ totalFormatado;
 
     document.getElementById("enviarWhatsapp").classList.add("mostrar");
 }
@@ -63,3 +63,4 @@ Olá, gostaria de confirmar este orçamento:
 
     window.open(linkFinal, '_blank');
 }
+

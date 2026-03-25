@@ -220,7 +220,34 @@ h1{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+.check-item input{
+    display: none;
+}  
+.grid-checkbox-nivel{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-top: -5px;
+}
 .check-item{
-    
+    background-color: #b8afaf;
+    border-radius: 8px;
+    margin: 3px;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    transition: all 0.4s ease;
+    min-width: 130px;
+    padding: 20px 10px;
+    text-align: center;
+}
+.check-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f0f7ff;
+}
+.check-item:has(input:checked){
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-color: #ffffff;
 }
 
